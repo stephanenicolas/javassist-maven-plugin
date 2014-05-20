@@ -75,7 +75,7 @@ public class JavassistMojoTest {
         
         mojo.execute();
     }
-    
+
     @Test
     public void testSkip() throws Exception {
         File pom = new File( "src/test/resources/project3/pom.xml" );
@@ -89,5 +89,4 @@ public class JavassistMojoTest {
         assertTrue( mojo.isSkip() );
         mojo.execute();
     }
-
 }
