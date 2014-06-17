@@ -67,7 +67,9 @@
 		<maven-core.version>3.2.1</maven-core.version>
 		<plexus-utils.version>3.0.17</plexus-utils.version>
 		<plexus-archiver.version>2.4.4</plexus-archiver.version>
+		<maven-compiler-plugin.version>2.5.1</maven-compiler-plugin.version>
 
+		<java.version>1.6</java.version>
 		<commons-io.version>2.4</commons-io.version>
 		<slf4j-api.version>1.7.7</slf4j-api.version>
 		<slf4j-simple.version>1.7.7</slf4j-simple.version>
@@ -273,6 +275,14 @@
 		</pluginManagement>
 
 		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-plugin-plugin</artifactId>
